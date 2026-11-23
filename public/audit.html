@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en-AU"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Free Bill Audit | PowerPair</title>
+<meta name="description" content="Send one power bill. Get the rebates you are eligible for, a right-sized solar and battery system and payback, then one vetted installer if you want a quote.">
+<link rel="canonical" href="https://powerpair.io/audit.html">
+<meta property="og:title" content="Free Bill Audit | PowerPair"><meta property="og:description" content="Send one power bill. Get the rebates you are eligible for, a right-sized solar and battery system and payback, then one vetted installer if you want a quote."><meta property="og:type" content="website">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="site.css">
+</head><body>
+<nav class="nav"><div class="wrap">
+<a class="logo" href="index.html"><svg aria-hidden="true" width="34" height="40" viewBox="12 4 88 104"><rect x="27" y="14" width="16" height="9" rx="2" fill="#fff"/><rect x="20" y="21" width="30" height="83" rx="8" fill="#fff"/><rect x="27" y="82" width="16" height="14" rx="2.5" fill="#13A3A8"/><rect x="27" y="64" width="16" height="14" rx="2.5" fill="#13A3A8"/><rect x="27" y="46" width="16" height="14" rx="2.5" fill="#13A3A8" fill-opacity=".4"/><path d="M50 22A26 26 0 0 1 50 74Z" fill="#F5A524"/><g stroke="#F5A524" stroke-width="5" stroke-linecap="round"><line x1="66.5" y1="19.4" x2="71.5" y2="10.8"/><line x1="78.6" y1="31.5" x2="87.2" y2="26.5"/><line x1="83" y1="48" x2="93" y2="48"/><line x1="78.6" y1="64.5" x2="87.2" y2="69.5"/><line x1="66.5" y1="76.6" x2="71.5" y2="85.2"/></g></svg><div><b>Power<span>Pair</span></b><small>Solar + storage, explained.</small></div></a>
+<div class="navlinks"><a href="index.html#calculator">Calculator</a><a href="index.html#checker">Rebate checker</a><a href="index.html#states">States</a><a class="btn cta" href="audit.html">Free Bill Audit</a></div>
+</div></nav>
+<section class="band"><div class="wrap formwrap">
+<h1>Your free Bill Audit</h1>
+<p class="sub">Three short steps. We read your bill, check your rebates and send your numbers. You choose whether to talk to an installer.</p>
+<div class="prog" aria-hidden="true"><div></div><div></div><div></div></div>
+<div class="summary" id="prefill"></div>
+<form class="card" id="audit-form" name="bill-audit" method="POST" action="thanks.html" enctype="multipart/form-data" data-netlify="true" netlify-honeypot="company_website">
+<input type="hidden" name="form-name" value="bill-audit">
+<p class="hp"><label>Leave this empty <input name="company_website" tabindex="-1" autocomplete="off"></label></p>
+<input type="hidden" name="lead_grade"><input type="hidden" name="est_saving"><input type="hidden" name="est_rebates"><input type="hidden" name="est_system"><input type="hidden" name="est_month_today"><input type="hidden" name="est_month_financed"><input type="hidden" name="est_finance"><input type="hidden" name="landing_page">
+<input type="hidden" name="utm_source"><input type="hidden" name="utm_medium"><input type="hidden" name="utm_campaign"><input type="hidden" name="utm_term"><input type="hidden" name="utm_content"><input type="hidden" name="gclid"><input type="hidden" name="fbclid">
+
+<div class="pane">
+<h2 style="font-size:24px;margin-bottom:16px">1. Your site</h2>
+<div class="two"><div class="f"><label for="a-state">State</label><select id="a-state" name="state" required><option value="">Choose…</option><option value="NSW">New South Wales</option><option value="VIC">Victoria</option><option value="QLD">Queensland</option><option value="SA">South Australia</option><option value="WA">Western Australia</option><option value="TAS">Tasmania</option><option value="ACT">Australian Capital Territory</option><option value="NT">Northern Territory</option></select></div>
+<div class="f"><label for="postcode">Site postcode</label><input id="postcode" name="postcode" type="text" inputmode="numeric" pattern="[0-9]{4}" maxlength="4" required></div></div>
+<div class="f"><label for="biz_type">What does the business do?</label><select id="biz_type" name="biz_type" required><option value="">Choose…</option><option>Warehouse or logistics</option><option>Manufacturing or workshop</option><option>Retail or hospitality</option><option>Office or professional</option><option>Farm or agriculture</option><option>Cold storage or food processing</option><option>Club, school or community</option><option>Home-based business</option><option>Other</option></select></div>
+<div class="f"><label for="premises">The premises are</label><select id="premises" name="premises" required><option value="">Choose…</option><option value="own">Owned by us</option><option value="long">Leased, 5+ years left</option><option value="short">Leased, under 5 years left</option><option value="unsure">Not sure</option></select></div>
+<div class="two"><div class="f"><label for="bill_band">Typical power bill</label><select id="bill_band" name="bill_band" required><option value="">Choose…</option><option>Under $1,000 a month</option><option>$1,000 to $3,000 a month</option><option>$3,000 to $10,000 a month</option><option>Over $10,000 a month</option></select></div>
+<div class="f"><label for="has_solar">Solar on site now?</label><select id="has_solar" name="has_solar" required><option value="">Choose…</option><option>No</option><option>Yes, under 30 kW</option><option>Yes, 30 to 100 kW</option><option>Yes, over 100 kW</option></select></div></div>
+<p class="err" aria-live="polite"></p>
+<div class="navrow"><span></span><button type="button" class="btn cta" data-next>Next</button></div>
+</div>
+
+<div class="pane" hidden>
+<h2 style="font-size:24px;margin-bottom:16px">2. Your bill</h2>
+<div class="f"><label for="bill_file">Upload a recent bill (PDF or photo, under 8 MB)</label><input id="bill_file" name="bill_file" type="file" accept=".pdf,image/*"><p class="hint">The clearest way for us to see your tariff, peak times and demand charges.</p></div>
+<div class="f"><label for="nmi">Or your NMI (optional)</label><input id="nmi" name="nmi" type="text" maxlength="11" autocomplete="off"><p class="hint">The 10 or 11 character meter number on your bill.</p></div>
+<div class="f"><label for="interest">Interested in</label><select id="interest" name="interest" required><option value="">Choose…</option><option>Solar + battery</option><option>Battery only</option><option>Solar only</option><option>Not sure yet</option></select></div>
+<div class="f"><label for="pay_pref">How would you pay?</label><select id="pay_pref" name="pay_pref" required><option value="">Choose…</option><option>Finance, $0 upfront</option><option>Cash</option><option>Not sure, show me both</option></select></div>
+<div class="f"><label for="timeframe">When would you like it installed?</label><select id="timeframe" name="timeframe" required><option value="">Choose…</option><option value="0-3">Within 3 months</option><option value="3-6">3 to 6 months</option><option value="6-12">6 to 12 months</option><option value="12+">Over 12 months / just researching</option></select></div>
+<p class="err" aria-live="polite"></p>
+<div class="navrow"><button type="button" class="btn ghost" data-back>Back</button><button type="button" class="btn cta" data-next>Next</button></div>
+</div>
+
+<div class="pane" hidden>
+<h2 style="font-size:24px;margin-bottom:16px">3. Where to send it</h2>
+<div class="two"><div class="f"><label for="name">Your name</label><input id="name" name="name" type="text" autocomplete="name" required></div>
+<div class="f"><label for="role">Your role</label><select id="role" name="role" required><option value="">Choose…</option><option value="owner">Owner</option><option value="director">Director / CFO</option><option value="manager">Operations or facilities manager</option><option value="other">Other</option></select></div></div>
+<div class="two"><div class="f"><label for="business">Business name</label><input id="business" name="business" type="text" autocomplete="organization" required></div>
+<div class="f"><label for="abn">ABN (optional)</label><input id="abn" name="abn" type="text" inputmode="numeric" maxlength="14"></div></div>
+<div class="two"><div class="f"><label for="email">Email</label><input id="email" name="email" type="email" autocomplete="email" required></div>
+<div class="f"><label for="phone">Mobile</label><input id="phone" name="phone" type="tel" autocomplete="tel" pattern="[0-9 +()]{8,16}" required></div></div>
+<div class="f"><label for="want_quote">After your audit</label><select id="want_quote" name="want_quote" required><option value="">Choose…</option><option value="yes">Yes, pair me with one vetted installer for a firm quote</option><option value="later">Send my audit first; I'll decide on a quote later</option></select></div>
+<div class="f"><label class="check"><input type="checkbox" name="consent" value="yes" required> <span>I agree PowerPair can use these details to prepare my Bill Audit and contact me about it, and, if I ask for a quote, share them with one accredited installer. See the <a href="privacy.html">privacy notice</a>.</span></label></div>
+<p class="err" aria-live="polite"></p>
+<div class="navrow"><button type="button" class="btn ghost" data-back>Back</button><button type="submit" class="btn cta">Send my Bill Audit request</button></div>
+</div>
+</form>
+<p class="pp-fine" style="color:var(--soft)">No spam lists, no cold calls from us. Your bill is used only for your audit.</p>
+</div></section>
+<footer class="band"><div class="wrap">
+<div class="cols">
+<div><a class="logo" href="index.html"><svg aria-hidden="true" width="34" height="40" viewBox="12 4 88 104"><rect x="27" y="14" width="16" height="9" rx="2" fill="#fff"/><rect x="20" y="21" width="30" height="83" rx="8" fill="#fff"/><rect x="27" y="82" width="16" height="14" rx="2.5" fill="#13A3A8"/><rect x="27" y="64" width="16" height="14" rx="2.5" fill="#13A3A8"/><rect x="27" y="46" width="16" height="14" rx="2.5" fill="#13A3A8" fill-opacity=".4"/><path d="M50 22A26 26 0 0 1 50 74Z" fill="#F5A524"/><g stroke="#F5A524" stroke-width="5" stroke-linecap="round"><line x1="66.5" y1="19.4" x2="71.5" y2="10.8"/><line x1="78.6" y1="31.5" x2="87.2" y2="26.5"/><line x1="83" y1="48" x2="93" y2="48"/><line x1="78.6" y1="64.5" x2="87.2" y2="69.5"/><line x1="66.5" y1="76.6" x2="71.5" y2="85.2"/></g></svg><div><b>Power<span>Pair</span></b><small>Solar + storage, explained.</small></div></a>
+<p style="margin-top:12px">We explain business solar and battery options, check your rebates, then pair you with one vetted, accredited installer. One installer, not four sales calls.</p>
+<p style="margin-top:8px">hello@powerpair.io</p></div>
+<div><h3>Your state</h3><ul><li><a href="nsw.html">New South Wales</a></li><li><a href="vic.html">Victoria</a></li><li><a href="qld.html">Queensland</a></li><li><a href="sa.html">South Australia</a></li><li><a href="wa.html">Western Australia</a></li><li><a href="tas.html">Tasmania</a></li><li><a href="act.html">Australian Capital Territory</a></li><li><a href="nt.html">Northern Territory</a></li></ul></div>
+<div><h3>Tools</h3><ul><li><a href="audit.html">Free Bill Audit</a></li><li><a href="index.html#calculator">Savings calculator</a></li><li><a href="index.html#checker">Rebate checker</a></li><li><a href="privacy.html">Privacy</a></li></ul></div>
+</div>
+<div class="legal">
+<p>PowerPair is an independent referral service. We are not a government agency, a retailer or an installer, and we don't run any rebate scheme. Rebates are applied by your accredited installer and depend on eligibility, system size and install date. Figures on this site are estimates, not quotes or financial advice; talk to your accountant about tax. Schemes referred to: Australian Government Cheaper Home Batteries Program and Small-scale Renewable Energy Scheme (Clean Energy Regulator); NSW Peak Demand Reduction Scheme; Victorian Energy Upgrades; ACT Sustainable Business Program; WA Residential Battery Scheme. Scheme settings checked 23 November 2026.</p>
+<p style="margin-top:8px">© 2026 PowerPair. ABN to be added.</p></div>
+</div></footer>
+<script src="site.js"></script>
+</body></html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en-AU"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>SA Business Bill Audit | Solar and battery rebates | PowerPair</title>
+<meta name="description" content="Free Bill Audit for South Australia businesses. See which solar and battery rebates apply, a right-sized system and payback. Adelaide, Mount Gambier, Whyalla and regional SA.">
+<link rel="canonical" href="https://powerpair.io/sa.html">
+<meta property="og:title" content="SA Business Bill Audit | Solar and battery rebates | PowerPair"><meta property="og:description" content="Free Bill Audit for South Australia businesses. See which solar and battery rebates apply, a right-sized system and payback. Adelaide, Mount Gambier, Whyalla and regional SA."><meta property="og:type" content="website">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="site.css">
+</head><body>
+<nav class="nav"><div class="wrap">
+<a class="logo" href="index.html"><svg aria-hidden="true" width="34" height="40" viewBox="12 4 88 104"><rect x="27" y="14" width="16" height="9" rx="2" fill="#fff"/><rect x="20" y="21" width="30" height="83" rx="8" fill="#fff"/><rect x="27" y="82" width="16" height="14" rx="2.5" fill="#13A3A8"/><rect x="27" y="64" width="16" height="14" rx="2.5" fill="#13A3A8"/><rect x="27" y="46" width="16" height="14" rx="2.5" fill="#13A3A8" fill-opacity=".4"/><path d="M50 22A26 26 0 0 1 50 74Z" fill="#F5A524"/><g stroke="#F5A524" stroke-width="5" stroke-linecap="round"><line x1="66.5" y1="19.4" x2="71.5" y2="10.8"/><line x1="78.6" y1="31.5" x2="87.2" y2="26.5"/><line x1="83" y1="48" x2="93" y2="48"/><line x1="78.6" y1="64.5" x2="87.2" y2="69.5"/><line x1="66.5" y1="76.6" x2="71.5" y2="85.2"/></g></svg><div><b>Power<span>Pair</span></b><small>Solar + storage, explained.</small></div></a>
+<div class="navlinks"><a href="index.html#calculator">Calculator</a><a href="index.html#checker">Rebate checker</a><a href="index.html#states">States</a><a class="btn cta" href="audit.html">Free Bill Audit</a></div>
+</div></nav>
+<header class="band hero"><div class="wrap grid">
+<div><span class="kicker">South Australia · Free Bill Audit</span>
+<h1>South Australia has some of the highest business power prices in the country. Find out what yours is costing you.</h1>
+<p class="sub">High usage rates make SA one of the fastest paybacks for business solar and batteries. The federal rebates apply. Upload a bill and see your numbers.</p>
+<div class="ctas"><a class="btn cta" href="audit.html?state=SA">Audit my SA bill</a><a class="btn ghost" href="#calculator">Quick estimate</a></div>
+<ul class="ticks"><li><b>Federal battery rebate:</b> Small businesses with solar; batteries 5 to 100 kWh nominal. Steps down on 1 Jan 2027.</li><li><b>Federal solar rebate (STCs):</b> New solar up to 1 MW.</li></ul></div>
+<div class="bill" aria-label="Example of a business power bill being audited">
+<div class="hd"><span>Business electricity</span><span>Quarter</span></div>
+<div class="row"><span><mark>Peak usage</mark></span><span>$2,460</span></div>
+<div class="row"><span>Off-peak usage</span><span>$486</span></div>
+<div class="row"><span>Supply charge</span><span>$214</span></div>
+<div class="row"><span>Solar feed-in credit</span><span>-$38</span></div>
+<p class="note">Highlighted: the line a battery and solar are built to shrink.</p>
+<div class="verdict"><span class="stamp">AUDITED</span><br>Rebates you're likely eligible for, a right-sized system and payback, on one page.</div>
+<p class="pp-fine" style="color:#4a5d70">Illustrative bill, not a real customer.</p></div>
+</div></header>
+<section class="band" id="calculator"><div class="wrap">
+<h2>Swap the bill. Keep the asset.</h2>
+<p class="sub">Today your power bill buys you nothing you keep. Finance the system after rebates, and a smaller bill plus the repayment can cost less each month than the bill alone. When the loan ends, you own the system and keep the lower bill. Put in one bill to see your numbers; every assumption is shown.</p>
+<div class="calc">
+<form class="card" id="calc-form">
+<div class="f"><label for="state">State</label><select id="state" name="state"><option value="NSW">New South Wales</option><option value="VIC">Victoria</option><option value="QLD">Queensland</option><option value="SA" selected>South Australia</option><option value="WA">Western Australia</option><option value="TAS">Tasmania</option><option value="ACT">Australian Capital Territory</option><option value="NT">Northern Territory</option></select></div>
+<div class="two"><div class="f"><label for="bill">Power bill ($, inc GST)</label><input id="bill" name="bill" type="number" inputmode="numeric" min="0" step="50" value="1500"></div>
+<div class="f"><label for="period">For a</label><select id="period" name="period"><option value="m">Month</option><option value="q">Quarter</option></select></div></div>
+<fieldset class="f"><legend>When does your business use power?</legend><div class="opts"><input type="radio" id="hours-day" name="hours" value="day" checked><label for="hours-day">Business hours</label><input type="radio" id="hours-ext" name="hours" value="ext"><label for="hours-ext">Early to late</label><input type="radio" id="hours-all" name="hours" value="all"><label for="hours-all">24/7</label></div></fieldset>
+<fieldset class="f"><legend>What are you looking at?</legend><div class="opts"><input type="radio" id="scope-both" name="scope" value="both" checked><label for="scope-both">Solar + battery</label><input type="radio" id="scope-batt" name="scope" value="batt"><label for="scope-batt">Battery only (I have solar)</label></div></fieldset>
+<div class="two"><div class="f"><label for="solar">Existing solar (kW)</label><input id="solar" name="solar" type="number" inputmode="numeric" min="0" step="1" value="0"><p class="hint">0 if none.</p></div>
+<div class="f"><label for="roof">Usable roof</label><select id="roof" name="roof"><option value="s">Small (up to 30 kW)</option><option value="m" selected>Medium (up to 100 kW)</option><option value="l">Large (up to 200 kW)</option><option value="xl">Very large (200 kW+)</option></select></div></div>
+<div class="two"><div class="f"><label for="when">Install</label><select id="when" name="when"><option value="2026">By 31 Dec 2026</option><option value="2027a" selected>Jan to Jun 2027</option><option value="2027b">Jul to Dec 2027</option></select></div>
+<div class="f"><label for="rate">Your rate (c/kWh)</label><input id="rate" name="rate" type="number" inputmode="decimal" min="5" max="80" step="0.5" placeholder="30"><p class="hint">Optional, from your bill.</p></div></div>
+<div class="two"><div class="f"><label for="term">Pay for it with</label><select id="term" name="term"><option value="0">Cash</option><option value="5">Finance over 5 years</option><option value="7" selected>Finance over 7 years</option><option value="10">Finance over 10 years</option></select></div>
+<div class="f"><label for="apr">Interest rate (% p.a.)</label><input id="apr" name="apr" type="number" inputmode="decimal" min="0" max="20" step="0.1" value="8"><p class="hint">Example only. Your lender sets the rate.</p></div></div>
+</form>
+<div class="card result" id="calc-out" aria-live="polite"></div>
+</div></div></section>
+<section class="band alt"><div class="wrap"><h2>What applies in South Australia</h2>
+<p class="sub">Serving Adelaide, Mount Gambier, Whyalla and regional SA. Checked 23 November 2026; rules change, so the Bill Audit re-checks them for your site.</p>
+<div class="schemes" style="margin-top:22px;max-width:860px"><div class="scheme"><h3>Federal battery rebate</h3><p>Small businesses with solar; batteries 5 to 100 kWh nominal. Steps down on 1 Jan 2027.</p></div><div class="scheme"><h3>Federal solar rebate (STCs)</h3><p>New solar up to 1 MW.</p></div><div class="scheme"><h3>State rebate</h3><p>No current SA business solar or battery rebate.</p></div></div></div></section>
+<section class="band"><div class="wrap">
+<h2>How the free Bill Audit works</h2>
+<div class="steps">
+<div class="step"><i>1</i><h3>Send one bill</h3><p>Upload a recent bill, or your NMI. Two minutes.</p></div>
+<div class="step"><i>2</i><h3>We read it properly</h3><p>Usage, peak times, demand charges, feed-in and what you're paying per kWh.</p></div>
+<div class="step"><i>3</i><h3>You get the numbers</h3><p>Rebates you're eligible for, a sensible system size, payback, and what to ask installers.</p></div>
+<div class="step"><i>4</i><h3>One vetted installer</h3><p>If you want a firm quote, we pair you with one accredited installer near you. Not four sales calls.</p></div>
+</div></div></section>
+<section class="band alt" id="checker"><div class="wrap">
+<h2>Which rebates fit your site?</h2>
+<p class="sub">Six quick taps. We list the government-backed discounts that apply, the ones to check, and the ones that don't.</p>
+<div class="chk">
+<form class="card" id="chk-form">
+<div class="f"><label for="c-state">State</label><select id="c-state" name="state"><option value="NSW">New South Wales</option><option value="VIC">Victoria</option><option value="QLD">Queensland</option><option value="SA" selected>South Australia</option><option value="WA">Western Australia</option><option value="TAS">Tasmania</option><option value="ACT">Australian Capital Territory</option><option value="NT">Northern Territory</option></select></div>
+<fieldset class="f"><legend>Where would it go?</legend><div class="opts"><input type="radio" id="site-business" name="site" value="business" checked><label for="site-business">Business premises</label><input type="radio" id="site-homebiz" name="site" value="homebiz"><label for="site-homebiz">Home with a business</label><input type="radio" id="site-home" name="site" value="home"><label for="site-home">Home only</label></div></fieldset>
+<fieldset class="f"><legend>The site is</legend><div class="opts"><input type="radio" id="own-own" name="own" value="own" checked><label for="own-own">Owned</label><input type="radio" id="own-long" name="own" value="long"><label for="own-long">Leased 5+ yrs</label><input type="radio" id="own-short" name="own" value="short"><label for="own-short">Leased, shorter</label></div></fieldset>
+<fieldset class="f"><legend>Solar on site now?</legend><div class="opts"><input type="radio" id="solar-yes" name="solar" value="yes"><label for="solar-yes">Yes</label><input type="radio" id="solar-no" name="solar" value="no" checked><label for="solar-no">No</label></div></fieldset>
+<fieldset class="f"><legend>Interested in</legend><div class="opts"><input type="radio" id="plan-both" name="plan" value="both" checked><label for="plan-both">Solar + battery</label><input type="radio" id="plan-batt" name="plan" value="batt"><label for="plan-batt">Battery</label><input type="radio" id="plan-solar" name="plan" value="solar"><label for="plan-solar">Solar</label></div></fieldset>
+<fieldset class="f"><legend>Battery size (rough)</legend><div class="opts"><input type="radio" id="size-s" name="size" value="s"><label for="size-s">Up to 20 kWh</label><input type="radio" id="size-m" name="size" value="m" checked><label for="size-m">20 to 100 kWh</label><input type="radio" id="size-l" name="size" value="l"><label for="size-l">100 to 200 kWh</label><input type="radio" id="size-xl" name="size" value="xl"><label for="size-xl">Over 200 kWh</label></div></fieldset>
+</form>
+<div class="schemes" id="chk-out" aria-live="polite"></div>
+</div></div></section>
+<section class="band"><div class="wrap"><h2>Questions business owners ask</h2><div class="faq"><details><summary>Why is payback often faster in SA?</summary><p>Because each kWh you avoid buying is worth more. The calculator uses a typical 36c/kWh blended rate; put in your own rate from your bill for a closer figure.</p></details><details><summary>Is the Bill Audit really free?</summary><p>Yes. You get your numbers whether or not you go ahead. If you ask for a quote, the installer we pair you with pays us a referral fee; it does not change your price.</p></details><details><summary>Are these government grants?</summary><p>No. They are government-backed rebates and discounts. Your accredited installer takes them off the quote. Nobody applies for a cash grant, and anyone who says otherwise is worth avoiding.</p></details><details><summary>Why does install date matter?</summary><p>The federal battery rebate is set by the install date, not the order date. It steps down on 1 January 2027 and again on 1 July 2027. Small solar systems also drop from 5 to 4 years of certificates on 1 January 2027.</p></details><details><summary>How accurate is the calculator?</summary><p>It is a first estimate from one number. The Bill Audit uses your actual usage, tariff and demand charges, and an installer quote is the final word.</p></details><details><summary>Do you arrange the finance?</summary><p>No. We show what a loan could look like so you can compare it with your bill. Your bank, an equipment financier or the installer&#x27;s finance partner sets the actual rate, fees and approval. Ask about green or CEFC-backed business loans, which can carry a discount. &quot;Keep the asset&quot; applies to a loan or chattel mortgage, where your business owns the system. Under a power purchase agreement or rental, the provider owns it.</p></details><details><summary>Who will contact me?</summary><p>PowerPair first, to check the details. Then one accredited installer, only if you ask for a quote.</p></details></div></div></section>
+<section class="band cta-band"><div class="wrap">
+<h2>See what your bill is really telling you.</h2>
+<p class="sub">Free Bill Audit for Australian businesses. Rebates checked, numbers shown, then one vetted installer if you want a quote.</p>
+<a class="btn cta" href="audit.html?state=SA">Start my free Bill Audit</a></div></section>
+<footer class="band"><div class="wrap">
+<div class="cols">
+<div><a class="logo" href="index.html"><svg aria-hidden="true" width="34" height="40" viewBox="12 4 88 104"><rect x="27" y="14" width="16" height="9" rx="2" fill="#fff"/><rect x="20" y="21" width="30" height="83" rx="8" fill="#fff"/><rect x="27" y="82" width="16" height="14" rx="2.5" fill="#13A3A8"/><rect x="27" y="64" width="16" height="14" rx="2.5" fill="#13A3A8"/><rect x="27" y="46" width="16" height="14" rx="2.5" fill="#13A3A8" fill-opacity=".4"/><path d="M50 22A26 26 0 0 1 50 74Z" fill="#F5A524"/><g stroke="#F5A524" stroke-width="5" stroke-linecap="round"><line x1="66.5" y1="19.4" x2="71.5" y2="10.8"/><line x1="78.6" y1="31.5" x2="87.2" y2="26.5"/><line x1="83" y1="48" x2="93" y2="48"/><line x1="78.6" y1="64.5" x2="87.2" y2="69.5"/><line x1="66.5" y1="76.6" x2="71.5" y2="85.2"/></g></svg><div><b>Power<span>Pair</span></b><small>Solar + storage, explained.</small></div></a>
+<p style="margin-top:12px">We explain business solar and battery options, check your rebates, then pair you with one vetted, accredited installer. One installer, not four sales calls.</p>
+<p style="margin-top:8px">hello@powerpair.io</p></div>
+<div><h3>Your state</h3><ul><li><a href="nsw.html">New South Wales</a></li><li><a href="vic.html">Victoria</a></li><li><a href="qld.html">Queensland</a></li><li><a href="sa.html">South Australia</a></li><li><a href="wa.html">Western Australia</a></li><li><a href="tas.html">Tasmania</a></li><li><a href="act.html">Australian Capital Territory</a></li><li><a href="nt.html">Northern Territory</a></li></ul></div>
+<div><h3>Tools</h3><ul><li><a href="audit.html">Free Bill Audit</a></li><li><a href="index.html#calculator">Savings calculator</a></li><li><a href="index.html#checker">Rebate checker</a></li><li><a href="privacy.html">Privacy</a></li></ul></div>
+</div>
+<div class="legal">
+<p>PowerPair is an independent referral service. We are not a government agency, a retailer or an installer, and we don't run any rebate scheme. Rebates are applied by your accredited installer and depend on eligibility, system size and install date. Figures on this site are estimates, not quotes or financial advice; talk to your accountant about tax. Schemes referred to: Australian Government Cheaper Home Batteries Program and Small-scale Renewable Energy Scheme (Clean Energy Regulator); NSW Peak Demand Reduction Scheme; Victorian Energy Upgrades; ACT Sustainable Business Program; WA Residential Battery Scheme. Scheme settings checked 23 November 2026.</p>
+<p style="margin-top:8px">© 2026 PowerPair. ABN to be added.</p></div>
+</div></footer>
+<script src="site.js"></script>
+</body></html>
